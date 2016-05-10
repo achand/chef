@@ -393,6 +393,10 @@ module ChefConfig
     default :yum_timeout, 900
     default :yum_lock_timeout, 30
     default :solo,  false
+
+    # Are we running in old Chef Solo legacy mode?
+    default :solo_legacy_mode,  false
+
     default :splay, nil
     default :why_run, false
     default :color, false
